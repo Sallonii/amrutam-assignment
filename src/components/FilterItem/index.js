@@ -1,9 +1,9 @@
 import {IoMdClose} from 'react-icons/io'
-
 import './index.css'
 
 const FilterItem = props => {
   const {filterList} = props
+
   return (
     <div className="filters-list">
       {filterList.map(eachItem => (

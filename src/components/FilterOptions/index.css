@@ -1,24 +1,25 @@
-.filter-li-container {
-  list-style-type: none;
+.filter-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-item {
+  flex: 0 0 auto;
+}
+
+.filter-select {
   background-color: rgba(224, 224, 230, 0.738);
   padding: 10px;
   border-radius: 10px;
-}
-select {
-  background-color: transparent;
   border: none;
   color: rgb(29, 28, 28);
   font-weight: 700;
   outline: none;
   cursor: pointer;
+  width: 120px;
 }
-button {
-  background-color: rgba(224, 224, 230, 0.738);
-  padding: 10px;
-  border-radius: 10px;
-  color: rgb(29, 28, 28);
-  font-weight: 700;
-  outline: none;
-  border: none;
-  cursor: pointer;
+.filters {
+  background-color: rgba(186, 214, 186, 0.478);
+  color: green;
 }

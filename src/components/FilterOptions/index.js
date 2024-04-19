@@ -23,6 +23,11 @@ const FiltersList = [
     name: 'Language',
     values: ['English', 'Spanish', 'French', 'Mandarin'],
   },
+  {
+    id: v4(),
+    name: 'ALL filters',
+    values: ['All', 'others'],
+  },
 ]
 
 const FilterOptions = props => {
@@ -35,23 +40,23 @@ const FilterOptions = props => {
   }
 
   return (
-    <>
+    <div className="filter-main-container">
       {FiltersList.map(eachItem => (
-        <li className="filter-li-container" key={eachItem.id}>
+        <div className="filter-item" key={eachItem.id}>
           <select
+            className={`filter-select ${eachItem.name}`}
             onChange={e => onChangeFilter(eachItem.name.toLowerCase(), e)}
           >
             <option defaultValue hidden>
               {eachItem.name}
             </option>
-            {eachItem.values.map(eachValues => (
-              <option key={eachValues}>{eachValues}</option>
+            {eachItem.values.map(eachValue => (
+              <option key={eachValue}>{eachValue}</option>
             ))}
           </select>
-        </li>
+        </div>
       ))}
-      <button type="button">Clear Filters</button>
-    </>
+    </div>
   )
 }
 
