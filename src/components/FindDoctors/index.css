@@ -1,0 +1,78 @@
+.location-search-bg-container {
+  background-image: url('https://res.cloudinary.com/dwj8ezxgi/image/upload/v1713503836/green-watercolor-background-illustration_rvqrtd.jpg');
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+.find-experts-heading {
+  font-size: 20px;
+}
+.location-and-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 767px) {
+  .location-and-input-container {
+    flex-direction: row;
+  }
+}
+
+.location-element-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: solid 1px rgb(141, 137, 137);
+  width: 230px;
+  height: 40px;
+  border-radius: 10px;
+}
+.location-icon {
+  color: green;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.location-select-element {
+  border: none;
+  width: 90%;
+  outline: none;
+}
+
+.search-element-container {
+  background-color: white;
+  margin: 10px;
+  width: 270px;
+  border-radius: 10px;
+  height: 40px;
+  border: solid 1px rgb(141, 137, 137);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-element {
+  border: none;
+  width: 90%;
+  outline: none;
+}
+.filters-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.filter {
+  align-self: flex-end;
+}

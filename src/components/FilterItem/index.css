@@ -1,0 +1,18 @@
+.filters-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-item {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(170, 234, 184, 0.69);
+  border-radius: 20px;
+  height: 40px;
+  padding: 10px;
+}
+.close-btn {
+  cursor: pointer;
+}
