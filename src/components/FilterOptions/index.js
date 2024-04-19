@@ -1,10 +1,10 @@
-import {v4} from 'uuid'
+import {v4} from 'uuid' // Importing v4 function from uuid library
+import './index.css' // Importing CSS file for styling
 
-import './index.css'
-
+// Array containing filter options
 const FiltersList = [
   {
-    id: v4(),
+    id: v4(), // Generating unique ID for filter option
     name: 'Expertise',
     values: ['Cardiology', 'Neurology', 'Orthopedics', 'Pediatrics'],
   },
@@ -30,9 +30,11 @@ const FiltersList = [
   },
 ]
 
+// Component for displaying filter options
 const FilterOptions = props => {
   const {setFilter} = props
 
+  // Function to handle filter change
   const onChangeFilter = (filterName, event) => {
     const {value} = event.target
     const filterDetails = {filterName, value}
@@ -41,15 +43,18 @@ const FilterOptions = props => {
 
   return (
     <div className="filter-main-container">
+      {/* Mapping over each filter option */}
       {FiltersList.map(eachItem => (
         <div className="filter-item" key={eachItem.id}>
+          {/* Select element for each filter option */}
           <select
             className={`filter-select ${eachItem.name}`}
-            onChange={e => onChangeFilter(eachItem.name.toLowerCase(), e)}
+            onChange={e => onChangeFilter(eachItem.name.toLowerCase(), e)} // Calling onChangeFilter function on select change
           >
             <option defaultValue hidden>
               {eachItem.name}
             </option>
+            {/* Mapping over values of each filter option */}
             {eachItem.values.map(eachValue => (
               <option key={eachValue}>{eachValue}</option>
             ))}

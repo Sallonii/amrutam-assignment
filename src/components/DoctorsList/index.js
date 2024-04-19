@@ -1,12 +1,11 @@
-import {v4} from 'uuid'
+import {v4} from 'uuid' // Importing uuid for generating unique IDs
+import {FaStar} from 'react-icons/fa' // Importing FaStar icon
+import './index.css' // Importing CSS file for styling
 
-import {FaStar} from 'react-icons/fa'
-
-import './index.css'
-
+// Array of doctor details
 const doctorsList = [
   {
-    id: v4(),
+    id: v4(), // Generating unique ID for each doctor
     name: 'Dr. John Doe',
     rating: 4.5,
     expertise: 'Cardiology',
@@ -40,10 +39,14 @@ const doctorsList = [
   },
 ]
 
+// Component to display list of doctors
 const DoctorsList = () => (
   <div className="doctor-details-card-container">
+    {/* Mapping over each doctor card */}
     {doctorsList.map(eachCard => (
       <div className="card-container" key={eachCard.id}>
+        {' '}
+        {/* Assigning unique key to each card */}
         <div className="profile-container">
           <img
             className="profile-image"
@@ -51,18 +54,21 @@ const DoctorsList = () => (
             alt="profile"
           />
           <div className="rating-container">
+            {/* Displaying rating with FaStar icon */}
             <p>
               {eachCard.rating} <FaStar />
             </p>
           </div>
         </div>
         <div className="details-container">
+          {/* Displaying doctor details */}
           <h2>{eachCard.name}</h2>
           <p>{eachCard.expertise}</p>
           <p>{eachCard.experience} experience</p>
           <p>Speaks: English, Spanish, French</p>
         </div>
         <div className="fees-container">
+          {/* Displaying consultation fees */}
           <div className="fee-card">
             <h3>Video Consultation</h3>
             <p>${eachCard.videoFee}</p>
@@ -72,6 +78,7 @@ const DoctorsList = () => (
             <p>${eachCard.chatFee}</p>
           </div>
         </div>
+        {/* Buttons for view profile and book consultation */}
         <button type="button" className="view-profile-button button">
           View Profile
         </button>
