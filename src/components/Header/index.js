@@ -6,7 +6,7 @@ const Header = () => (
   <>
     {/* Main header container */}
     <div className="header-main-container">
-      <div className="header-container">
+      <div className="nav-header-container">
         {/* Heading and navigation links */}
         <div className="heading-link-container">
           {/* Link to home */}

@@ -1,0 +1,38 @@
+.concerns-main-container {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(161, 158, 158, 0.69);
+  border-radius: 10px;
+  margin: 10px;
+}
+.concerns-header-container {
+  background-color: #eff8ef;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+  height: 40px;
+}
+.concerns-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 80%;
+}
+.concern-text {
+  font-size: 15px;
+  margin: 3px;
+  background-color: rgb(221, 221, 226);
+  padding: 5px;
+  border-radius: 10px;
+  color: #3a643b;
+}
+.more-button {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(180, 179, 179, 0.69);
+  border-radius: 10px;
+  padding: 5px;
+  background-color: transparent;
+}

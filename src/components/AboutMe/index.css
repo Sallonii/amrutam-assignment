@@ -1,0 +1,54 @@
+.about-main-container {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(161, 158, 158, 0.69);
+  border-radius: 10px;
+  margin: 10px;
+}
+.header-container {
+  background-color: #eff8ef;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.follow-button {
+  background-color: transparent;
+  border-radius: 7px;
+}
+.about-para {
+  font-size: 10px;
+  color: darkgray;
+  font-weight: 700;
+}
+.read-more-container {
+  display: flex;
+  align-items: center;
+}
+.hr-container {
+  width: 70%;
+}
+.read-more-text {
+  text-decoration: underline;
+  margin-left: 4px;
+}
+.language-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.language-item {
+  background-color: rgba(198, 226, 236, 0.795);
+  padding: 5px;
+  border-radius: 15px;
+}
+.social-media-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  width: 50%;
+}

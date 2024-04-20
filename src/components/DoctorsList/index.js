@@ -2,6 +2,8 @@ import {v4} from 'uuid' // Importing uuid for generating unique IDs
 import {FaStar} from 'react-icons/fa' // Importing FaStar icon
 import './index.css' // Importing CSS file for styling
 
+import {Link} from 'react-router-dom'
+
 // Array of doctor details
 const doctorsList = [
   {
@@ -47,9 +49,9 @@ const DoctorsList = () => (
       <div className="card-container" key={eachCard.id}>
         {' '}
         {/* Assigning unique key to each card */}
-        <div className="profile-container">
+        <div className="doc-profile-container">
           <img
-            className="profile-image"
+            className="doc-profile-image"
             src="https://amrutam.netlify.app/assets/drgirl-DmPgbVcR.png"
             alt="profile"
           />
@@ -79,9 +81,11 @@ const DoctorsList = () => (
           </div>
         </div>
         {/* Buttons for view profile and book consultation */}
-        <button type="button" className="view-profile-button button">
-          View Profile
-        </button>
+        <Link to="/doctor1" className="view-btn-link">
+          <button type="button" className="view-profile-button button">
+            View Profile
+          </button>
+        </Link>
         <button type="button" className="book-consultation-button button">
           Book a Consultation
         </button>
